@@ -26,9 +26,9 @@ cd franchise-api
 
 ### 3. Cambiar propiedades del proyecto
 
-spring.datasource.url=jdbc:mysql://localhost:3306/franchise_db
-spring.datasource.username=tu_usuario_mysql
-spring.datasource.password=tu_contraseña_mysql
+- spring.datasource.url=jdbc:mysql://localhost:3306/franchise_db
+- spring.datasource.username=tu_usuario_mysql
+- spring.datasource.password=tu_contraseña_mysql
 
 ### 4. Compilar proyecto luego de los cambios
 
