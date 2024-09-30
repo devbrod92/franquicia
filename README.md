@@ -112,6 +112,6 @@ El esquema de la base de datos se genera automáticamente utilizando spring.jpa.
 - Branch: Almacena información sobre sucursales y tiene una relación con la tabla Franchise.
 - Product: Almacena información sobre productos y tiene una relación con la tabla Branch.
 
-###Licencia
+### Licencia
 Este proyecto está licenciado bajo la MIT License. Puedes usarlo libremente para tus proyectos personales o profesionales.
 
