@@ -54,5 +54,46 @@ POST /api/franchises/{franchiseId}/branches
 }
 ```
 
+POST /api/branches/{branchId}/products
 
+```json
+{
+  "name": "Producto 1",
+  "stock": 100
+}
+```
+
+DELETE /api/branches/{branchId}/products/{productId}
+
+PUT /api/branches/{branchId}/products/{productId}/stock
+
+```json
+{
+  "stock": 150
+}
+```
+
+GET /api/franchises/{franchiseId}/products/most-stock
+```json
+[
+  {
+    "id": 1,
+    "name": "Producto 1",
+    "stock": 150,
+    "branch": {
+      "id": 1,
+      "name": "Sucursal 1"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Producto 2",
+    "stock": 200,
+    "branch": {
+      "id": 2,
+      "name": "Sucursal 2"
+    }
+  }
+]
+```
 
