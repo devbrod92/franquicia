@@ -13,9 +13,46 @@ Para ejecutar este proyecto, necesitarás:
 
 ## Instrucciones de instalación
 
-### 1. Clonar el repositorio
+### 1. Crear base de datos con MySQL
+
+CREATE DATABASE franchise_db;
+
+### 2. Clonar el repositorio
 
 ```bash
 git clone https://github.com/tu-usuario/franchise-api.git
 cd franchise-api
+```
+
+### 3. Cambiar propiedades del proyecto
+
+spring.datasource.url=jdbc:mysql://localhost:3306/franchise_db
+spring.datasource.username=tu_usuario_mysql
+spring.datasource.password=tu_contraseña_mysql
+
+### 4. Compilar proyecto luego de los cambios
+
+```bash
+mvn clean install
+mvn spring-boot:run
+```
+
+### 5. Consumo de los endpoints
+
+POST /api/franchises
+
+```json
+{
+  "name": "Franquicia 1"
+}
+```
+
+POST /api/franchises/{franchiseId}/branches
+```json
+{
+  "name": "Sucursal 1"
+}
+```
+
+
 
