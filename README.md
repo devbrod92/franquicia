@@ -99,18 +99,18 @@ GET /api/franchises/{franchiseId}/products/most-stock
 ### 4. Estructura del Proyecto
 El proyecto sigue una arquitectura en capas. Aquí hay un breve resumen de las clases principales:
 
-FranchiseController: Controlador que expone los endpoints de la API.
-FranchiseService: Servicio que contiene la lógica de negocio.
-ProductRepository: Repositorio que maneja la persistencia de datos de productos.
-BranchRepository: Repositorio que maneja la persistencia de sucursales.
-FranchiseRepository: Repositorio que maneja la persistencia de franquicias.
+- FranchiseController: Controlador que expone los endpoints de la API.
+- FranchiseService: Servicio que contiene la lógica de negocio.
+- ProductRepository: Repositorio que maneja la persistencia de datos de productos.
+- BranchRepository: Repositorio que maneja la persistencia de sucursales.
+- FranchiseRepository: Repositorio que maneja la persistencia de franquicias.
 
 ### 5. Base de Datos
 El esquema de la base de datos se genera automáticamente utilizando spring.jpa.hibernate.ddl-auto=update en application.properties. A continuación, un ejemplo de las tablas que se crearán:
 
-Franchise: Almacena información sobre franquicias.
-Branch: Almacena información sobre sucursales y tiene una relación con la tabla Franchise.
-Product: Almacena información sobre productos y tiene una relación con la tabla Branch.
+- Franchise: Almacena información sobre franquicias.
+- Branch: Almacena información sobre sucursales y tiene una relación con la tabla Franchise.
+- Product: Almacena información sobre productos y tiene una relación con la tabla Branch.
 
 ###Licencia
 Este proyecto está licenciado bajo la MIT License. Puedes usarlo libremente para tus proyectos personales o profesionales.
